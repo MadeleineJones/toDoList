@@ -14,12 +14,13 @@ function appendNewItem(item){
     </div>
     </div>`);
   $('.time').val("");
-  var name=$('.name');
-  sub.on("click",addName());
+  var name=$('#name');
+  sub.on("click",remove);
+  $('.name').val("");
   //var checkbox=$('.checkbox');
   //checkbox.on("click",remove);
 }
-function addName(){
+function remove(){
   event.target.parentNode.remove();
 }
 
